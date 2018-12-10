@@ -3,6 +3,16 @@
 
 This repo is now developing.
 
+# Available Libraries
+
+* datetime
+* glob
+* math(as pymath)
+* os(as pyos)
+* random(as pyrandom)
+* sys
+* time
+
 # Examples
 
 ## def
@@ -29,7 +39,7 @@ with pyopen("foo.txt", "r") as f:
 import pythonify/datetime as datetime
 import pythonify/time as time
 
-def lap(fn: proc) -> proc:
+proc lap(fn: proc): proc =
         proc inner() =
             echo "---start---"
             var start = pydatetime.now()
