@@ -1,7 +1,9 @@
 # pythonify
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# def
+# Examples
+
+## def
 
 ```nim
 import pythonify
@@ -10,7 +12,7 @@ def add(x, y):
     return x + y
 ```
 
-# with
+## with
 
 ```nim
 import pythonify
@@ -19,7 +21,7 @@ with pyopen("foo.txt", "r") as f:
     print(f.read())
 ```
 
-# decorator
+## decorator
 
 ```nim
 import pythonify/datetime as datetime
@@ -42,7 +44,7 @@ def lap(fn: proc) -> proc:
 testfunc()
 ```
 
-# Exceptions
+## Exceptions
 
 ```nim
 import pythonify
@@ -51,7 +53,7 @@ if true:
     raise SyntaxError("Error!")
 ```
 
-# str methods
+## str methods
 
 ```nim
 import pythonify
