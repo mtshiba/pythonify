@@ -2,6 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repo is now developing.
+(意訳：やることが多すぎてめげてしまいました。誰か助けて)
 
 # Available Libraries
 
