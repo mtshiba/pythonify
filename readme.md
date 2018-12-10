@@ -4,6 +4,12 @@
 This repo is now developing.
 (意訳：やることが多すぎてめげてしまいました。誰か助けて)
 
+# Install
+
+```
+nimble install https://github.com/gmshiba/pythonify
+```
+
 # Available Libraries
 
 * datetime
