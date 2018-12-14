@@ -1,7 +1,7 @@
 # pythonify
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repo is now developing.
+This repository is not complete yet.
 (意訳：やることが多すぎてめげてしまいました。誰か助けて)
 
 # Install
