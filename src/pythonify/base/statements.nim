@@ -84,7 +84,6 @@ macro privatedef*(head, body: untyped): untyped =
 ## 今のところasを使用したバージョンのみ対応
 ## provides (class).ENTER() and (class).EXIT() as an interface
 ## for now it only supports versions using "as"
-
 macro with*(head, body: untyped): untyped =
     var res = ""
     head.expectLen(3)
@@ -92,18 +91,17 @@ macro with*(head, body: untyped): untyped =
     of 3:
         assert $head[0] == "as"
         var args: seq[string] = @[]
-        let classname = $head[1][0]
+        let classname = repr(head[1][0])
         for i in 1..head[1].len-1:
-            args.add($head[1][i])
-        let asname = $head[2]
+            args.add(repr(head[1][i]))
+        let asname = head[2]
         res = fmt"""
-var {asname} = {classname}({args})
+var {asname} = {classname}({args.join(",")})
 {asname}.ENTER()
 {repr(body)}
 {asname}.EXIT()"""
     else:
         discard
-    # echo res
     parsestmt(res)
 
 # decorator
